@@ -1,0 +1,17 @@
+<section class="section bg">
+  <div class="main">
+    <div class="quest-div">
+      <h1>Você quer se juntar ao time da Convem?</h1>
+    </div>
+    <div class="form-div" id="quest-section">
+      <form class="form-content">
+        <input autocomplete="off" type="text" placeholder="Sua resposta:" name="userResponse" [(ngModel)]="userResponse">
+      <button (click)="onclick()">Confirmar</button>
+      </form>
+    </div>
+  </div>
+</section>
+<div class="section" id="response">
+  <h1>{{apiResponse.msg}}</h1>
+  <button (click)="scroll('#quest-section')">Voltar</button>
+</div>
